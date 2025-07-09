@@ -98,7 +98,6 @@ def get_erddap_data(erddap_url, dataset, data_protocol="griddap",
         # Update the constraints
         if constraints is not None:
             e.constraints.update(constraints)
-            e.griddap_initialize()
             
         # Update the selection of the variables
         if variables is not None:
